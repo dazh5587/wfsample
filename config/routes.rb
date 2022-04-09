@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get 'signup'=>'users#new'
   get 'help'=>'static_pages#help'
   get  'about'=>'static_pages#about'
-  
+  resources :users
 end
