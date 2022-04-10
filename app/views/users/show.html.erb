@@ -1,1 +1,10 @@
-<%= @user.name %>, <%= @user.email %>
+Currently viewing shifts for <%= @user.name %> <br>
+
+<% if @user.shifts.any? %>
+    <h3>Shifts (<%= @user.shifts.count %>)</h3>
+    <ol class="shifts">
+    <%= render @user.shifts %>
+    </ol>
+<%else %>
+<%= @user.name %> has no shifts assigned to them yet
+<% end %>

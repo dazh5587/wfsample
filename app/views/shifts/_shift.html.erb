@@ -1,0 +1,7 @@
+<li id="shift-<%=shift.id%>">
+<%= link_to shift.user.name, shift.user %>
+<%=shift.content %>
+<span class = "timestamp"> 
+    Posted <%= time_ago_in_words(shift.created_at) %> ago.
+</span>
+</li>
