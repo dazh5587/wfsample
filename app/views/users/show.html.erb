@@ -1,4 +1,4 @@
-Currently viewing shifts for <%= @user.name %> <br>
+Currently viewing posts for <%= @user.name %> <br>
 
 <% if @user.shifts.any? %>
     <h3>Shifts (<%= @user.shifts.count %>)</h3>
@@ -6,5 +6,5 @@ Currently viewing shifts for <%= @user.name %> <br>
     <%= render @user.shifts %>
     </ol>
 <%else %>
-<%= @user.name %> has no shifts assigned to them yet
+<%= @user.name %> has no posts assigned to them yet
 <% end %>
