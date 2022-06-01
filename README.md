@@ -2,6 +2,8 @@
 
 Download the zip file
 
+Open the file
+
 cd into the repo via terminal (cd wfsample)
 
 run "rails server" in terminal
